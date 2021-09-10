@@ -6,6 +6,7 @@
 package array;
 
 import array2.Heroe;
+import java.util.Scanner;
 
 /**
  *
@@ -17,11 +18,15 @@ public class Array {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Heroe heroe = new Heroe();
-        Enemigo enemigo = new Enemigo();
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digita un número:");
+        int h = entrada.nextInt();
+        int[] numeros = new int[h];
         
-        enemigo.nombre="h";
-        heroe.nombre="j";
-        heroe.setEdad(300);
+        for(int i=0; i<numeros.length; i++){
+            numeros[i]=h;
+            System.out.println(numeros[i]);
+            h++;
+        }
     } 
 }
